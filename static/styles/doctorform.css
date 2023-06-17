@@ -1,0 +1,15 @@
+.leftside, .rightside{
+    height:100%;
+    width:100%
+}
+
+@media screen and (max-width: 320px){
+    .leftside{
+        height:100%;
+        width:100%;
+    }
+    .rightside{
+        height:100%;
+        width:100%;
+    }
+}

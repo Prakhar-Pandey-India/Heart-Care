@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+    </head>
+    <body>
+        <div style="justify-content: center; align-items: center;">
+        <table border="2">
+            {% for key,value in result.items() %}
+            <tr>
+                <th>
+                    {{key}}
+                </th>
+                <td>
+                    {{value}}
+                </td>
+            </tr>
+            {% endfor %}
+        </table> <br>
+        <a aria-current="page" class="nav-link active" href="/"><button>Home</button></a>
+        </div>
+    </body>
+</html>
