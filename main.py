@@ -15,6 +15,7 @@ def html():
 def publicresult():
     if request.method=='POST':
         result=request.form
+        client=pymongo.MongoClient("mongodb+srv://heartcare:heartcare@cluster0.3irrwx4.mongodb.net/test")
         db = client["heartcare"]
         bp = 0;chol = 0;sugar = 0
         temp=[]
@@ -213,5 +214,5 @@ if __name__=="__main__":
 # collection.insert_one(dictionary1)
 
 
-app.run(debug = True)
+#app.run(debug = True)
 # by using debug = True it will work as development mode. So, no need to run and complie everytime after every change.
